@@ -1,0 +1,26 @@
+{
+  "name": "pokeapi",
+  "version": "1.0.0",
+  "description": "Training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently 'npm run dev --prefix server' 'npm run dev --prefix client'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dfamilia/pokeapi.git"
+  },
+  "keywords": [
+    "training"
+  ],
+  "author": "Darlin Familia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dfamilia/pokeapi/issues"
+  },
+  "homepage": "https://github.com/Dfamilia/pokeapi#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
