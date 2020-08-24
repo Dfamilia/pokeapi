@@ -1,0 +1,1 @@
+export const conditionalTemplate = (template) => (show) => show ? template : null;
