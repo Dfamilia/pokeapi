@@ -5,7 +5,6 @@ export const PokemonListContext = createContext(null);
 
 const Provider = ({ children }) => {
     const [pokemonList, setPokemonList] = useState([]);
-    // const [error, setError] = useState('')
 
     useEffect(() => {
         const fetchPokemonList = async () => {
