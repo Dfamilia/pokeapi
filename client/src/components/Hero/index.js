@@ -43,11 +43,13 @@ const Hero = () => {
     }, [pokemonList, nextSearch, pokemonStatsList])
 
     return (
-        <div>
-            {pokemonStatsList.map((pokemon, i) => (
-                <Pokemon ref={pokemonStatsList.length === i + 1 ? lastPokemonElementRef : null} key={pokemon.name} pokemonInfo={pokemon} />
-            ))}
-        </div>
+        < div >
+            {
+                pokemonStatsList.map((pokemon, i) => (
+                    <Pokemon ref={pokemonStatsList.length === i + 1 ? lastPokemonElementRef : null} key={pokemon.name} pokemonInfo={pokemon} />
+                ))
+            }
+        </div >
     )
 }
 
