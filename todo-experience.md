@@ -6,7 +6,7 @@
 - [ ] make a dropdown list with the searchbox (pokemon by name)
 
 ## main
-- [ ] organize item by row (4 for row)
+- [x] organize item by row (5 for row)
 
 ## footer
 
