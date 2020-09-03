@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect, useRef, useCallback, Fragment }
 
 import { PokemonListContext } from '../../Context/pokemonListContext';
 import getPokemonByURL from '../../util/Helpers/getPokemonByURL';
+import { useStyles } from './styles'
 import Pokemon from '../Pokemon/index';
 
 
@@ -12,6 +13,7 @@ const Hero = () => {
     const [loading, setLoading] = useState(false);
     const [nextSearch, setNextSearch] = useState(true);
     const observer = useRef();
+    const classes = useStyles();
 
     const lastPokemonElementRef = useCallback(node => {
         if (loading) return;
@@ -41,7 +43,7 @@ const Hero = () => {
     }, [pokemonList, nextSearch, pokemonStatsList])
 
     return (
-        < div >
+        < div className={classes.main}>
             {
                 pokemonStatsList.map((pokemon, i) => (
                     <Pokemon ref={pokemonStatsList.length === i + 1 ? lastPokemonElementRef : null} key={pokemon.name} pokemonInfo={pokemon} />

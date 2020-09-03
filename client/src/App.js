@@ -1,6 +1,6 @@
 import React from 'react';
 import PokemonListProvider from './Context/pokemonListContext';
-import Hero from './components/Hero';
+import Hero from './components/Hero/index';
 
 const App = () => {
 
