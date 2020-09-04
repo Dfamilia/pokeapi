@@ -11,7 +11,6 @@ import { useStyles } from './styles';
 
 const Pokemon = React.forwardRef(({ pokemonInfo }, ref) => {
     const classes = useStyles();
-    console.log('pokemon', pokemonInfo)
 
     return (
         <Card ref={ref} className={classes.root}>

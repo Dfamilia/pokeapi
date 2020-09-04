@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect, useRef, useCallback, Fragment } from 'react';
 
 import { PokemonListContext } from '../../Context/pokemonListContext';
-import getPokemonByURL from '../../util/Helpers/getPokemonByURL';
+import getPokemonByURL from '../../Helpers/getPokemonByURL';
 import { useStyles } from './styles'
 import Pokemon from '../Pokemon/index';
 

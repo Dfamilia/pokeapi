@@ -7,6 +7,6 @@ export const useStyles = makeStyles({
         display: 'flex',
         flexWrap: 'wrap',
         flexDirection: 'row',
-        justifyContent: 'center'
+        justifyContent: 'center',
     }
 });
